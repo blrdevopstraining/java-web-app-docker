@@ -4,7 +4,7 @@
 	
 	<groupId>com.devopsdesk</groupId>
 	<artifactId>java-web-app</artifactId>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 	<version>1.0-SNAPSHOT</version>
 	
 	<name>Maven Web Application</name>
