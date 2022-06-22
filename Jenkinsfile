@@ -28,10 +28,10 @@ node{
         def dockerRun = ' docker run  -d -p 8080:8080 --name java-web-app blrdevopstraining/java-web-app'
          
          sshagent(['DOCKER_SERVER']) {
-          sh 'ssh -o StrictHostKeyChecking=no ec2-user@172.31.20.72 docker stop java-web-app || true'
-          sh 'ssh  ubuntu@172.31.20.72 docker rm java-web-app || true'
-          sh 'ssh  ubuntu@172.31.20.72 docker rmi -f  $(docker images -q) || true'
-          sh "ssh  ubuntu@172.31.20.72 ${dockerRun}"
+          sh 'ssh -o StrictHostKeyChecking=no ec2-user@13.232.24.173 docker stop java-web-app || true'
+          sh 'ssh  ubuntu@13.232.24.173 docker rm java-web-app || true'
+          sh 'ssh  ubuntu@13.232.24.173 docker rmi -f  $(docker images -q) || true'
+          sh "ssh  ubuntu@13.232.24.173 ${dockerRun}"
        }
        
     }
